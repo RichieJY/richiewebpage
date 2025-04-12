@@ -1,0 +1,203 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #000000;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Changes color on hover */
+.topnav a:hover {
+  background-color: #c90606;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #001c97;
+  color: rgb(255, 255, 255);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Responsive nav styles */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.AboutMe {
+  font-family: Arial, sans-serif; 
+  color: white;
+  line-height: 1.5; 
+  padding: 10px; 
+  background-color: #2507a8;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 450px;
+  position: absolute;
+  bottom: 140px;
+  left: 765px; 
+}
+
+body {
+  background-color: grey;
+}
+
+div span {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 3px;
+  font-size: 70px;
+  position: relative; 
+  z-index: 100;       
+}
+
+div span:first-child {
+  animation: red 0.5s linear infinite;
+  animation-delay: 0.25s;
+}
+div span:last-child {
+  animation: blue 0.5s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes red {
+  from {
+    text-shadow: 0 0 5px red,
+           0 0 15px red,
+           0 0 30px red,
+           0 0 60px red;
+  }
+}
+@keyframes blue {
+  from {
+    text-shadow: 0 0 5px blue,
+           0 0 15px blue,
+           0 0 30px blue,
+           0 0 60px blue;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.name-banner {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+#skillsBox {
+  width: 270px;
+  position: absolute;
+  right: 30px; /* Moves the box to the right */
+  bottom: 30px; /* Positions it higher on the screen, close to the bottom */
+  text-align: center;
+  background-color: #2507a8;
+  font-size: 18px;
+  z-index: 2;
+  padding: 10px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.723); /* Ensures the text is readable */
+  overflow: hidden;
+}
+
+.certsAndAwards {
+  width: 450px;
+  position: absolute;
+  left: 765px; 
+  bottom: 25px; 
+  text-align: center;
+  background-color: #2507a8;
+  font-size: 14px;
+  z-index: 2;
+  padding: 10px;
+  border-radius: 8px;
+  color: rgb(252, 8, 8); /* Ensures the text is readable */
+  overflow: hidden;
+}
+.richie-photo {
+  width: 270px;         /* Adjust size as needed */
+  height: auto;
+  border-radius: 10px;  /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Optional: shadow */
+  margin: 20px;         /* Optional: spacing */
+  position: absolute;
+  right: 10px;
+  bottom: 95px;
+  z-index: 1;
+}
+
+.card {
+  left: 30px;
+  bottom: -250px;
+  position: relative;
+  width: 575px;
+}
+
+
+.richieAndAllie-photo {
+  width: 270px;         
+  height: auto;
+  border-radius: 10px;  
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5); 
+  margin: 20px;         
+  position: absolute;
+  left: 135px;
+  top: 100px;
+  z-index: 99;
+}
+
+#hobbiesBox {
+  width: 150px;
+  position: absolute;
+  left: 600px; 
+  bottom: 50px; 
+  background-color: #2507a8;
+  font-size: 14px;
+  z-index: 2;
+  padding: 10px;
+  border-radius: 8px;
+  color: rgb(242, 255, 0); /* Ensures the text is readable */
+  overflow: hidden;
+}
+
