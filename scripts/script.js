@@ -13,7 +13,8 @@ $(document).ready(function () {
       "Emergency / Non-Emergency Calltaking <strong>(Expert)</strong>",
       "Communication / Operating Communication Equipment <strong>(Expert)</strong>",
       "Microsoft Excel <strong>(Proficient)</strong>",
-      "Microsoft Powerpoint & Office <strong>(Proficient)</strong>"
+      "Microsoft Powerpoint & Office <strong>(Proficient)</strong>",
+      "Bootstrap 5 <strong>(Proficient)</strong>"
     ];
   
     let index = 0;
